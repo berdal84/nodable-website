@@ -1,0 +1,30 @@
+
+/** main variables */
+:root {
+    --color-primary: rgb(50, 50, 50);
+    --bg-color-primary: white;
+    --bg-color-secondary: #eee;
+}
+
+/** style */
+body {
+    color: var(--color-primary);
+    background-color: var(--bg-color-primary);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color-secondary);
+    opacity: 0.75;
+}
+
+#credits {
+    padding: 0.2em;
+    padding-top: 0.5em;
+    font-size: small;
+}
