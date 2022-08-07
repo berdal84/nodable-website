@@ -34,7 +34,7 @@ a:hover {
     color: var(--color-highlight);
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
     border-left: solid var(--color-highlight) 4px;
     padding-left: var(--size-1);
     background: linear-gradient(to right, var(--bg-color-secondary),  transparent 40%)
