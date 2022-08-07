@@ -32,6 +32,17 @@ body {
     font-family: var(--font-family);
 }
 
+:is(h1, h2, h3, h4, h5, h6) > :is( a, a:visited) {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+:is(h1, h2, h3, h4, h5, h6) > :is( a:hover ) {
+    text-decoration: underline;
+    color: var(--color-highlight);
+}
+
+
 a, a:visited {
     color: var(--color-highlight);
 }
@@ -49,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--font-size);
     color: var(--bg-color-secondary);
     padding: var(--pad-1);
-    margin-right: var(--size-1);
+    margin-right: var(--size-2);
     border-radius: var(--size-1);
     background-color: var(--color-highlight);
     vertical-align: middle;
