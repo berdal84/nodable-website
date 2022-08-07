@@ -1,23 +1,44 @@
 
-/** main variables */
+
+
+/** Override variables depending on screen size */
+@media (max-width: 240px) {
+    :root {
+        --size-1: 2px !important;
+    }
+
+    .container {
+        width: 90vw !important;
+    }
+}
+
 :root {
+    /** Base size */
+    --size-1: 4px;
+
+    /** Sizes */
+    --size-2: calc( var(--size-1) * 2);
+    --size-3: calc( var(--size-2) * 2);
+    --size-4: calc( var(--size-3) * 2);
+    --size-5: calc( var(--size-4) * 2);
+
+    /** Colors */
     --color-primary: rgb(50, 50, 50);
     --color-highlight: rgb(255, 157, 0);
     --color-shadows: rgb(163, 178, 186);
     --bg-color-primary: white;
     --bg-color-secondary: #eee;
-    --size-1: 4px;
-    --size-2: calc( var(--size-1) * 2);
-    --size-3: calc( var(--size-2) * 2);
-    --size-4: calc( var(--size-3) * 2);
-    --size-5: calc( var(--size-4) * 2);
+
+    /** Padding */
     --pad-1: var(--size-1); /* based on --size-1 */
     --pad-2: calc( var(--pad-1) * 4);
     --pad-3: calc( var(--pad-2) * 4);
+
+    /** Fonts */
     --font-family: Monospace;
-    --font-size: normal;
-    --font-size-lg: x-large;
-    --font-size-sm: small;
+    --font-size:    calc( var(--size-1) * 4); /* based on --size-1 */
+    --font-size-lg: calc( var(--font-size) * 2);
+    --font-size-sm: calc( var(--font-size) * 0.5);
 }
 
 /** style */
@@ -75,7 +96,8 @@ header {
 }
 
 #logo {
-    padding-bottom: var(--pad-3);
+    padding-bottom: var(--pad-1);
+    max-width: 80vw;
 }
 
 .container {
