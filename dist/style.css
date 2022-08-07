@@ -26,6 +26,7 @@
     --color-primary: rgb(50, 50, 50);
     --color-highlight: rgb(255, 157, 0);
     --color-shadows: rgb(163, 178, 186);
+    --color-shadows-lighter: rgb(221, 235, 242);
     --bg-color-primary: white;
     --bg-color-secondary: #eee;
 
@@ -78,14 +79,16 @@ h1, h2, h3, h4, h5, h6 {
 
 :is(h1, h2, h3, h4, h5, h6)::before {
     content: "#";
+    font-weight: lighter;
     font-size: var(--font-size);
     color: var(--bg-color-secondary);
-    padding: var(--pad-1);
+    padding: var(--size-2);
     margin-right: var(--size-2);
     border-radius: var(--size-1);
     background-color: var(--color-highlight);
     vertical-align: middle;
     background-size: var(--size-5) var(--size-5);
+    box-shadow: -4px -4px 0px var(--color-shadows-lighter);
 }
 
 header {
