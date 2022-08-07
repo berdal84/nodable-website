@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: -4px -4px 0px var(--color-shadows-lighter);
 }
 
+p.wip {
+    font-style: italic;
+}
+
 header {
     border-bottom: solid var(--bg-color-secondary) 2px;
     display: flex;
