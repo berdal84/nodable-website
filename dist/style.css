@@ -2,29 +2,82 @@
 /** main variables */
 :root {
     --color-primary: rgb(50, 50, 50);
+    --color-highlight: rgb(255, 128, 0);
+    --color-shadows: rgb(163, 178, 186);
     --bg-color-primary: white;
     --bg-color-secondary: #eee;
+    --pad-3: 32px;
+    --size-1: 8px;
+    --size-2: calc( var(--size-1) * 2);
+    --font-family: Monospace;
+    --font-size: normal;
+    --font-size-lg: x-large;
 }
 
 /** style */
 body {
     color: var(--color-primary);
+    background-color: var(--bg-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+a, a:visited {
+    color: var(--color-highlight);
+}
+
+a:hover {
+    color: var(--color-highlight);
+}
+
+h1 h2 h3 h4 h5 h6 {
+    border-left: solid var(--color-highlight) 4px;
+    padding-left: var(--size-1);
+    background: linear-gradient(to right, var(--bg-color-secondary),  transparent 40%)
+}
+
+
+
+header {
+    border-bottom: solid var(--bg-color-secondary) 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    padding-bottom: var(--pad-3);
+}
+
+.container {
+    width: 70vw;
     background-color: var(--bg-color-primary);
+    padding: var(--pad-3);
+    border-radius: 0 0 var(--size-1) var(--size-1);
+    box-shadow: 1px 1px 3px var(--color-shadows);
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
     left: 0;
     right: 0;
-    background-color: var(--bg-color-secondary);
-    opacity: 0.75;
+    background-color: var(--bg-color-primary);
+    opacity: 0.5;
 }
 
 #credits {
     padding: 0.2em;
     padding-top: 0.5em;
     font-size: small;
+}
+
+p > quote {
+    font-size: var(--font-size-lg);
 }
