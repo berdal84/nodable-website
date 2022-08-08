@@ -22,6 +22,8 @@
     --size-4: calc( var(--size-3) * 2);
     --size-5: calc( var(--size-4) * 2);
 
+    --container-max-width: 600px;
+
     /** Colors */
     --color-primary: rgb(50, 50, 50);
     --color-highlight: rgb(255, 157, 0);
@@ -111,6 +113,7 @@ header {
 
 .container {
     width: 70vw;
+    max-width: var(--container-max-width);
     background-color: var(--bg-color-primary);
     padding: var(--pad-3);
     border-radius: 0 0 var(--size-1) var(--size-1);
