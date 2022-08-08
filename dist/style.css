@@ -29,6 +29,7 @@
     --color-shadows-lighter: rgb(221, 235, 242);
     --bg-color-primary: white;
     --bg-color-secondary: #eee;
+    --bg-color-img: rgb(242, 242, 242);
 
     /** Padding */
     --pad-1: var(--size-1); /* based on --size-1 */
@@ -135,4 +136,26 @@ footer {
 
 p > quote {
     font-size: var(--font-size-lg);
+}
+
+img.illustration {
+    border: solid var(--bg-color-secondary) 1px;
+    filter: saturate(0.85);
+    border-radius: var(--size-2);
+    box-shadow: 1px 1px 1px var(--color-shadows);
+    background-color: var(--bg-color-img);
+    padding: var(--pad-2);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--pad-2);
+    border-top: solid 1px var(--bg-color-secondary);
+    padding-top: var(--pad-2);
+}
+
+section > :not(h1, h4, h3, h4, h5, h6) {
+    margin-left: var(--pad-2);
+    margin-right: var(--pad-2);
 }
