@@ -145,7 +145,6 @@ p > quote {
 
 img.illustration {
     border: solid var(--bg-color-secondary) 1px;
-    filter: saturate(0.85);
     border-radius: var(--size-2);
     box-shadow: 1px 1px 1px var(--color-shadows);
     background-color: var(--bg-color-img);
