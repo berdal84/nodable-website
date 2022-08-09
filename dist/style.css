@@ -163,3 +163,36 @@ section > :not(h1, h4, h3, h4, h5, h6) {
     margin-left: var(--pad-2);
     margin-right: var(--pad-2);
 }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery .legend {
+  font-size: var(--font-size-sm);
+  background-color: var(--bg-color-img);
+  padding: var(--pad-1);
+  transform: translateY(-12px);
+  margin-left: var(--pad-2);
+  margin-right: var(--pad-2);
+  border-radius: 0 0 var(--size-1) var(--size-1);
+}
+
+.gallery div {
+  flex: 1 200px;
+  flex-direction: column;
+  padding: 0px;
+  display: flex;
+  margin: var(--pad-1);
+}
+
+.gallery img {
+  flex: 1;
+  width: 100%;
+  padding: 0px;
+  object-fit: fill;
+  margin: var(--pad-1);
+}
