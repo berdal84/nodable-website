@@ -8,7 +8,7 @@ This project do no use any advanced framework or library, no build step either. 
 
 Will install the packages required to run the project.
 
-## `npm start`
+## `npm run dev`
 
 Will launch the development server (in watch mode). Browse `http://localhost:3000`.
 
