@@ -6,23 +6,32 @@
     </head>
     <body>
         <div class="container">
-
             <!-- Header -->
             <header>
                 <img id="logo" title="Nodable logo" src="assets/img/nodable-logo-xl.png"/>
             </header>
 
             <main>
-                <p class="wip">disclaimer: this website is still work in progress.</p>
-
                 <!-- Abstract -->
                 <section id="about">
-                    <h1><a href="#about">What is Nodable?</a></h1>
-                    <p>Nodable is node-able. The goal of Nodable is to provide an original hybrid source code editor, using both textual and nodal paradigms.</p>
-                    <p>In Nodable, the two point of views bellow are equivalents. The software is able to generate a graph from the code and the code from a graph.</p>
+                    <h1><a href="#about">Nodable is node-able</a></h1>
+                    <p>The goal of Nodable is to provide an original hybrid source code editor, using both textual and nodal paradigms.</p>
                     <img class="illustration" src="assets/img/code-and-graph.svg"/>
+                    <p>By constrast with other nodal softwares, Nodable allows the user to edit the text and the graph at any time...</p>
                 </section>
 
+                <!-- How it Works? -->
+                <section id="concept">
+                    <h1><a href="#concept">How does it works?</a></h1>
+                    <p>Nodable is able to generate a graph from a source code and a code from a graph.</p>
+                    <img class="illustration mb-1" src="assets/img/code-and-graph.svg"/>
+                    <p> Any changes to the code will update the graph.</p><p>If we replace <code>+10</code> by <code>-7</code> from the code above, Nodable will update the graph accordingly.</p>
+                    <img class="illustration mb-1" src="assets/img/code-change.svg"/>
+                    <p>2) Any changes to the graph will update the code.</p><p>If we change the <code>7</code> by <code>2.5</code>, we connect it to a divide operator with the <code>5</code> and we remove the multiply operator, Nodable will update the code accordingly.</p>
+                    <img class="illustration mb-1" src="assets/img/graph-change.svg"/>
+                    <p>There is no magic, the source code stays the source code. The graph is always generated on the fly.</p>
+                </section>
+                
                 <!-- Download binaries / source code -->
                 <section id="downloads">
                     <h1><a href="#downloads">Downloads</a></h1>
@@ -46,18 +55,6 @@
                         <p class="legend">Conditional structures.</p>
                       </div>
                     </div>
-                </section>
-
-                <!-- howitworks -->
-                <section id="concept">
-                    <h1><a href="#concept">The concept</a></h1>
-                    <p>In Nodable, the two point of views bellow are equivalents. The software is able to generate a graph from the code and the code from a graph.</p>
-                    <img class="illustration" src="assets/img/code-and-graph.svg"/>
-                    <p>Any changes to the code will update the graph.</p>
-                    <img class="illustration" src="assets/img/code-change.svg"/>
-                    <p>Any changes to the graph will update the code.</p>
-                    <img class="illustration" src="assets/img/graph-change.svg"/>
-                    <p>There is no magic, the source code stays the source code. The graph is always generated on the fly.</p>
                 </section>
 
                 <!-- Features -->
