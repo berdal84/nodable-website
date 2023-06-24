@@ -1,17 +1,5 @@
 
 
-
-/** Smaller Screens */
-@media (max-width: 480px) {
-    :root {
-        --size-1: 3px !important;
-    }
-
-    .container {
-        width: 90vw !important;
-    }
-}
-
 :root {
     /** Base size */
     --size-1: 4px;
@@ -21,8 +9,8 @@
     --size-3: calc( var(--size-2) * 2);
     --size-4: calc( var(--size-3) * 2);
     --size-5: calc( var(--size-4) * 2);
-
     --container-max-width: 700px;
+    --container-width: 95% !important;
 
     /** Colors */
     --color-primary: rgb(50, 50, 50);
@@ -135,7 +123,7 @@ header {
 }
 
 .container {
-    width: 70vw;
+    width: var(--container-width);
     max-width: var(--container-max-width);
     background-color: var(--bg-color-primary);
     padding: var(--pad-3);
