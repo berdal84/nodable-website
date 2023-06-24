@@ -226,3 +226,14 @@ code {
 .mb-1 {
     margin-bottom: 1rem;
 }
+
+.arrow-up {
+    all: unset;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.arrow-up img {
+    filter: brightness(0.5);
+    transform: translateY(20%);
+}
