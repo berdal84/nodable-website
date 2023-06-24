@@ -1,14 +1,27 @@
 
 
+/* Minimum resolution */
+@media (max-resolution: 72dpi) {
+    :root {
+        --size-1: calc(1rem * 0.25);
+    }
+}
+
+/* Maximum resolution */
+@media (min-resolution: 72dpi) {
+    :root {
+        --size-1: calc(1rem * 0.5);
+    }
+}
+
 :root {
-    /** Base size */
-    --size-1: 4px;
 
     /** Sizes */
     --size-2: calc( var(--size-1) * 2);
     --size-3: calc( var(--size-2) * 2);
     --size-4: calc( var(--size-3) * 2);
     --size-5: calc( var(--size-4) * 2);
+
     --container-max-width: 700px;
     --container-width: 95% !important;
 
@@ -68,6 +81,10 @@ a, a:visited {
 
 a:hover {
     color: var(--color-highlight);
+}
+
+#menu > a {
+    font-size: var(--font-size);
 }
 
 h1, h2, h3, h4, h5, h6 {
