@@ -2,9 +2,16 @@
 
 This repository hosts the sources of the Nodable [website](https://nodable.42borgata.com) which exists to promote the prototype [Nodable](https://github.com/berdal84/Nodable.git).
 
-This project do no use any advanced framework or library. The goal is to deploy a tiny website (an `index.html`, a `styl.css` and few images). 
+This project do no use any advanced framework or library, no build step either. The goal is to deploy a tiny website (an `index.html`, a `style.css` and few images). 
 
-## `npm run start`
+## `npm install` (prerequisite)
 
-Lanches the development server (in watch mode).
-Browse `0.0.0.0:8080` to see the result.
+Will install the packages required to run the project.
+
+## `npm start`
+
+Will launch the development server (in watch mode). Browse `http://localhost:3000`.
+
+## Deployment
+
+Copy `src` content to any public folder of your server.
