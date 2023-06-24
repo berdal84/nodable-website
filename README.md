@@ -10,7 +10,7 @@ Will install the packages required to run the project.
 
 ## `npm run dev`
 
-Will launch the development server (in watch mode). Browse `http://localhost:3000`.
+Will launch the development server. Browse `http://localhost:3000`, refresh the page to see changes.
 
 ## Deployment
 

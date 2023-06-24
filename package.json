@@ -3,19 +3,14 @@
   "version": "1.0.0",
   "description": "Repository for the Nodable's website",
   "main": "index.js",
-  "watch": {
-    "serve": "{src}/**.*"
-  },
   "scripts": {
-    "serve": "npx serve ./src -p 3000",    
-    "dev": "npm-watch",
+    "dev": "npx serve ./src -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bérenger Dalle-Cort",
   "license": "GPLv3",
   "homepage": "https://nodable.42borgata.com",
   "devDependencies": {
-    "npm-watch": "^0.11.0",
     "serve": "^14.2.0"
   }
 }
