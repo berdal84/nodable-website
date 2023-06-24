@@ -1,10 +1,10 @@
 
 
 
-/** Override variables depending on screen size */
-@media (max-width: 240px) {
+/** Smaller Screens */
+@media (max-width: 480px) {
     :root {
-        --size-1: 2px !important;
+        --size-1: 3px !important;
     }
 
     .container {
@@ -37,6 +37,11 @@
     --pad-1: var(--size-1); /* based on --size-1 */
     --pad-2: calc( var(--pad-1) * 4);
     --pad-3: calc( var(--pad-2) * 4);
+
+    /** Margin */
+    --m-1: var(--size-1); /* based on --size-1 */
+    --m-2: calc( var(--m-1) * 4);
+    --m-3: calc( var(--m-2) * 4);
 
     /** Fonts */
     --font-family: Monospace;
@@ -224,7 +229,7 @@ code {
 }
 
 .mb-1 {
-    margin-bottom: 1rem;
+    margin-bottom: var(--m-1);
 }
 
 .arrow-up {
