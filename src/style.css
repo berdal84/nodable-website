@@ -1,23 +1,9 @@
 
-
-/* Minimum resolution */
-@media (max-resolution: 72dpi) {
-    :root {
-        --size-1: calc(1rem * 0.25);
-    }
-}
-
-/* Maximum resolution */
-@media (min-resolution: 72dpi) {
-    :root {
-        --size-1: calc(1rem * 0.5);
-    }
-}
-
 :root {
-
+    
     /** Sizes */
-    --size-2: calc( var(--size-1) * 2);
+    --size-base: 4px;
+    --size-2: calc( var(--size-base) * 2);
     --size-3: calc( var(--size-2) * 2);
     --size-4: calc( var(--size-3) * 2);
     --size-5: calc( var(--size-4) * 2);
@@ -35,18 +21,18 @@
     --bg-color-img: rgb(242, 242, 242);
 
     /** Padding */
-    --pad-1: var(--size-1); /* based on --size-1 */
+    --pad-1: var(--size-base); /* based on --size-base */
     --pad-2: calc( var(--pad-1) * 4);
     --pad-3: calc( var(--pad-2) * 4);
 
     /** Margin */
-    --m-1: var(--size-1); /* based on --size-1 */
+    --m-1: var(--size-base); /* based on --size-base */
     --m-2: calc( var(--m-1) * 4);
     --m-3: calc( var(--m-2) * 4);
 
     /** Fonts */
     --font-family: Monospace;
-    --font-size:    calc( var(--size-1) * 3); /* based on --size-1 */
+    --font-size:    calc( var(--size-base) * 3); /* based on --size-base */
     --font-size-lg: calc( var(--font-size) * 1.5);
     --font-size-sm: calc( var(--font-size) * 0.75);
 }
@@ -99,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--bg-color-secondary);
     padding: var(--size-2);
     margin-right: var(--size-2);
-    border-radius: var(--size-1);
+    border-radius: var(--size-base);
     background-color: var(--color-highlight);
     vertical-align: middle;
     background-size: var(--size-5) var(--size-5);
@@ -206,7 +192,7 @@ section > :not(h1, h4, h3, h4, h5, h6) {
   transform: translateY(-12px);
   margin-left: var(--pad-2);
   margin-right: var(--pad-2);
-  border-radius: 0 0 var(--size-1) var(--size-1);
+  border-radius: 0 0 var(--size-base) var(--size-base);
 }
 
 .gallery div {
