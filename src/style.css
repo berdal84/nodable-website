@@ -38,6 +38,12 @@
 }
 
 /** style */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
 body {
     color: var(--color-primary);
     background-color: var(--bg-color-secondary);
